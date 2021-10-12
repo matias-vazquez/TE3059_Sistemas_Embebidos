@@ -1,0 +1,14 @@
+
+.\volatile_ex.o:     file format elf32-littlearm
+
+
+Disassembly of section .text.startup:
+
+00000000 <main>:
+   0:	e3a01026 	mov	r1, #38	; 0x26
+   4:	e3a02027 	mov	r2, #39	; 0x27
+   8:	e59f3008 	ldr	r3, [pc, #8]	; 18 <main+0x18>
+   c:	e5c31000 	strb	r1, [r3]
+  10:	e5c32001 	strb	r2, [r3, #1]
+  14:	eafffffe 	b	14 <main+0x14>
+  18:	00000000 	.word	0x00000000
